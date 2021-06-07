@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:replace="fragments :: html_head(pageTitle='All Products')" />
+<body>
+<div class="container">	
+	<div th:replace="fragments :: header"></div>
+	
+	<div class="text-center">
+		<h1>My depts - Todas as despesas</h1>
+		<p/>
+		<h4><a th:href="@{/new}">Criar nova despesa</a></h4>
+		<p/>
+	</div>
+	
+	<table class="table table-striped table-bordered table-hover">
+		<thead class="thead-dark">
+			<tr>
+				<th>Despesa  ID</th>
+				<th>Nome despesa</th>
+				<th>Tipo</th>
+				<th>Situação</th>
+				<th>Preco</th>
+				
+				<th>Ações</th>				
+				
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="product : ${listProducts}">
+				<td th:text="${product.id}">Despesa ID</td>
+				<td th:text="${product.name}">Nome despesa</td>
+				<td th:text="${product.brand}">Tipo</td>
+				<td th:text="${product.madein}">Situação</td>
+				<td th:text="${product.price}">Preco</td>
+				
+				<td>
+					<a th:href="@{'/edit/' + ${product.id}}">Editar</a>			
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a th:href="@{'/delete/' + ${product.id}}">Excluir</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div><br/><br/></div>
+</div>
+</body>
+</html>
