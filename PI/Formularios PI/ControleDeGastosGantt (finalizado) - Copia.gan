@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Controle de gastos" company="" webLink="http://" view-date="2020-10-01" view-index="0" gantt-divider-location="788" resource-divider-location="300" version="3.0.3000" locale="pt_BR">
+    <description/>
+    <view zooming-state="default:11" id="gantt-chart">
+        <field id="tpd3" name="Nome" width="303" order="0"/>
+        <field id="tpd4" name="Data inicial" width="233" order="1"/>
+        <field id="tpd5" name="Data final" width="233" order="2"/>
+        <option id="color.recent">
+            <![CDATA[#00cc66 #000000 #0000ff #990099 #ff3333 #990000]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nome" width="210" order="0"/>
+        <field id="1" name="Função" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="2" name="Projeto de controle de gastos" color="#000000" meeting="false" project="true" start="2021-03-22" duration="71" complete="0" thirdDate="2021-02-22" thirdDate-constraint="1" priority="4" expand="true">
+            <task id="7" name="Fase de planejamento" meeting="false" start="2021-03-22" duration="46" complete="0" expand="true">
+                <task id="9" name="Termo de abertura do projeto" color="#ff3333" meeting="false" start="2021-03-22" duration="7" complete="0" thirdDate="2020-11-02" thirdDate-constraint="0" expand="true"/>
+                <task id="17" name="Ger. Escopo do projeto" color="#ff3333" meeting="false" start="2021-03-22" duration="7" complete="0" thirdDate="2021-03-22" thirdDate-constraint="1" expand="true"/>
+                <task id="58" name="Coleta de requisitos" meeting="false" start="2021-03-31" duration="12" complete="0" expand="true">
+                    <task id="60" name="Disponibilização do questionário online" color="#ff3333" meeting="false" start="2021-03-31" duration="10" complete="0" thirdDate="2021-03-31" thirdDate-constraint="1" expand="true"/>
+                    <task id="61" name="Referências de pesquisa" color="#ff3333" meeting="false" start="2021-03-31" duration="10" complete="0" thirdDate="2021-03-31" thirdDate-constraint="1" expand="true"/>
+                    <task id="62" name="Entrevistas com partes interessadas no projeto" color="#ff3333" meeting="false" start="2021-03-31" duration="10" complete="0" thirdDate="2021-03-31" thirdDate-constraint="1" expand="true">
+                        <depend id="63" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="63" name="Conclusão final" color="#ff3333" meeting="false" start="2021-04-14" duration="2" complete="0" thirdDate="2021-03-22" thirdDate-constraint="1" expand="true"/>
+                </task>
+                <task id="16" name="Definição do design do software" meeting="false" start="2021-04-30" duration="17" complete="0" expand="true">
+                    <task id="68" name="Definição do site do produto" color="#000000" meeting="false" start="2021-04-30" duration="17" complete="0" thirdDate="2021-03-25" thirdDate-constraint="0" expand="true">
+                        <task id="73" name="Design do site do produto" meeting="false" start="2021-04-30" duration="15" complete="0" expand="true">
+                            <task id="80" name="Aprovação do design" color="#ff3333" meeting="false" start="2021-04-30" duration="15" complete="0" thirdDate="2021-04-30" thirdDate-constraint="1" expand="true"/>
+                        </task>
+                        <task id="78" name="Aprovação final dos designs listados" color="#ff3333" meeting="false" start="2021-05-21" duration="2" complete="0" thirdDate="2021-05-21" thirdDate-constraint="1" expand="true"/>
+                    </task>
+                </task>
+            </task>
+            <task id="26" name="Desenvolvimento do site" meeting="false" start="2021-06-01" duration="14" complete="0" expand="true">
+                <task id="135" name="Execução do desenvolvimento do site" meeting="false" start="2021-06-01" duration="14" complete="0" expand="true">
+                    <task id="136" name="Página inícial" color="#000000" meeting="false" start="2021-06-01" duration="6" complete="0" thirdDate="2021-10-05" thirdDate-constraint="0" expand="true">
+                        <task id="139" name="Links para inserção de dados" color="#00cc66" meeting="false" start="2021-06-01" duration="3" complete="0" thirdDate="2021-06-01" thirdDate-constraint="1" expand="true">
+                            <depend id="180" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="180" name="Link para sair da página" color="#00cc66" meeting="false" start="2021-06-04" duration="3" complete="0" thirdDate="2020-10-01" thirdDate-constraint="1" expand="true"/>
+                    </task>
+                    <task id="138" name="Página do usuário" color="#00cc66" meeting="false" start="2021-06-09" duration="3" complete="0" thirdDate="2021-06-09" thirdDate-constraint="1" expand="true"/>
+                    <task id="151" name="Disponibilização para testes" meeting="false" start="2021-06-14" duration="5" complete="0" expand="true">
+                        <task id="153" name="Disponibilizado em formato de beta" color="#0000ff" meeting="false" start="2021-06-14" duration="3" complete="0" thirdDate="2021-06-14" thirdDate-constraint="1" expand="true">
+                            <depend id="155" type="2" difference="0" hardness="Strong"/>
+                        </task>
+                        <task id="154" name="Diponibilizado para todo público" color="#0000ff" meeting="false" start="2021-06-14" duration="3" complete="0" thirdDate="2021-06-14" thirdDate-constraint="1" expand="true"/>
+                        <task id="155" name="Após a primeira semana de testes o feedback será  enviado ao gerente para ajustes" color="#0000ff" meeting="false" start="2021-06-17" duration="2" complete="0" thirdDate="2021-06-17" thirdDate-constraint="1" expand="true"/>
+                    </task>
+                </task>
+            </task>
+            <task id="24" name="Formalização da entrega final do produto" color="#000000" meeting="false" start="2021-06-21" duration="6" complete="0" thirdDate="2020-10-19" thirdDate-constraint="0" expand="true" cost-manual-value="0.0" cost-calculated="false">
+                <task id="32" name="Verificação dos requisitos da diretoria e partes interessadas" color="#990099" meeting="false" start="2021-06-21" duration="3" complete="0" thirdDate="2021-06-21" thirdDate-constraint="1" expand="true">
+                    <depend id="33" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="33" name="Contrato de formalização assinado pelo gerente e diretoria" color="#990099" meeting="false" start="2021-06-24" duration="2" complete="0" thirdDate="2021-06-24" thirdDate-constraint="1" expand="true">
+                    <depend id="34" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="34" name="Disponibilização do produto final no mercado" color="#990099" meeting="false" start="2021-06-28" duration="1" complete="0" thirdDate="2021-06-28" thirdDate-constraint="1" expand="true"/>
+            </task>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
