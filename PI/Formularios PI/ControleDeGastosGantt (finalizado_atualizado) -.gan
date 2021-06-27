@@ -37,7 +37,7 @@
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
         <task id="2" name="Projeto de controle de gastos" color="#000000" meeting="false" project="true" start="2021-03-22" duration="71" complete="0" thirdDate="2021-02-22" thirdDate-constraint="1" priority="4" expand="true">
-            <task id="7" name="Fase de planejamento" meeting="false" start="2021-03-22" duration="46" complete="0" expand="true">
+            <task id="7" name="Fase de planejamento" meeting="false" start="2021-03-22" duration="71" complete="0" expand="true">
                 <task id="9" name="Termo de abertura do projeto" color="#ff3333" meeting="false" start="2021-03-22" duration="7" complete="0" thirdDate="2020-11-02" thirdDate-constraint="0" expand="true"/>
                 <task id="17" name="Ger. Escopo do projeto" color="#ff3333" meeting="false" start="2021-03-22" duration="7" complete="0" thirdDate="2021-03-22" thirdDate-constraint="1" expand="true"/>
                 <task id="58" name="Coleta de requisitos" meeting="false" start="2021-03-31" duration="12" complete="0" expand="true">
@@ -55,6 +55,10 @@
                         </task>
                         <task id="78" name="Aprovação final dos designs listados" color="#ff3333" meeting="false" start="2021-05-21" duration="2" complete="0" thirdDate="2021-05-21" thirdDate-constraint="1" expand="true"/>
                     </task>
+                </task>
+                <task id="181" name="Aquisições" meeting="false" start="2021-03-31" duration="64" complete="0" expand="true">
+                    <task id="182" name="Contratação do desenvolvedor BD" color="#8cb6ce" meeting="false" start="2021-04-30" duration="42" complete="0" thirdDate="2021-04-30" thirdDate-constraint="1" expand="true"/>
+                    <task id="183" name="Contratação dominio" color="#8cb6ce" meeting="false" start="2021-03-31" duration="64" complete="0" thirdDate="2021-03-31" thirdDate-constraint="1" expand="true"/>
                 </task>
             </task>
             <task id="26" name="Desenvolvimento do site" meeting="false" start="2021-06-01" duration="14" complete="0" expand="true">
